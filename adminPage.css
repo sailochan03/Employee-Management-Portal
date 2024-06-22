@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  z-index: 1;
+  position: relative;
+}
+.adminMenu {
+  height: 30vh;
+  width: 40vw;
+  border: 2px solid rgb(53, 53, 53);
+  top: 50%;
+  left: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+.label {
+  text-align: center;
+}
+.btnCon {
+  width: 80%;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.adminBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(123, 123, 123);
+  color: black;
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+}
+.enterUID {
+  position: fixed; /* or fixed, depending on your layout needs */
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 50vh;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  z-index: 1000; /* Higher z-index value to appear above the container */
+  display: none;
+}
+.ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+button {
+  margin-top: 1rem;
+  width: 4rem;
+}

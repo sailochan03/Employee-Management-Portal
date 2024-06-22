@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.label {
+  text-align: center;
+}
+.loginInput {
+  height: 20vw;
+  width: 40vw;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+}
+.inputCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2 rem;
+  margin: 0.5rem;
+}
+.loginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
