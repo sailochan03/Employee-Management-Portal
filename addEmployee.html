@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESSEL/ADDEMP</title>
+    <link rel="stylesheet" href="addEmployee.css" />
+    <script src="addEmployee.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="portalWindow">
+        <h1 class="label">add new employee</h1>
+        <div class="inputColumns">
+          <div class="column">
+            <div class="textF">
+              <label for="name">Name:</label>
+              <input placeholder="Name" id="name" type="text" required />
+            </div>
+            <div class="textF">
+              <label for="email">Email:</label>
+              <input placeholder="Email" id="email" type="text" required />
+            </div>
+            <div class="textF">
+              <label for="address">Address:</label>
+              <input placeholder="Address" id="addr" type="text" required />
+            </div>
+            <div class="textF">
+              <label for="phoneNo">Phone No:</label>
+              <input
+                placeholder="Phone No."
+                id="phoneNo"
+                type="text"
+                required
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="textF">
+              <label for="DoB">DoB:</label>
+              <input placeholder="DoB" id="DoB" type="date" required />
+            </div>
+            <div class="textF">
+              <label for="DoJ">DoJ:</label>
+              <input placeholder="DoJ" id="DoJ" type="date" required />
+            </div>
+            <div class="textF">
+              <label for="salary">Salary:</label>
+              <input placeholder="Salary" id="sal" type="text" required />
+            </div>
+            <div class="textF">
+              <label for="designation">Designation:</label>
+              <input placeholder="Designation" id="desg" type="text" required />
+            </div>
+          </div>
+        </div>
+        <div class="inputCon">
+          <button id="submitBtn" class="loginBtn">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div id="dispDIV" class="enterUID hidden">
+      <div class="ctn">
+        <h2>New Employee Details:</h2>
+        <div class="txt" id="uid"><b>Employee UID:</b></div>
+        <div class="txt" id="nameDisp"><b>Name:</b></div>
+        <div class="txt" id="post"><b>Designation:</b></div>
+        <div class="txt" id="salaryDisp"><b>Salary:</b></div>
+        <div class="txt" id="doj"><b>DOJ:</b></div>
+        <div class="txt" id="dob"><b>DOB:</b></div>
+        <div class="txt" id="mail"><b>Email:</b></div>
+        <div class="txt" id="phNo"><b>Phone No:</b></div>
+        <div class="txt" id="address"><b>Address:</b></div>
+      </div>
+      <button id="confirmBtn">Confirm</button>
+    </div>
+    <div id="addMoreDIV" class="addMore hidden">
+      <div class="ctn">
+        <div class="txt"><b>Employee added Successfully!!</b></div>
+        <div class="flx">
+          <button id="addMore">Add More</button>
+          <button id="backBtn">Back to Menu</button>
+          <button id="listDirect">Employee List</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

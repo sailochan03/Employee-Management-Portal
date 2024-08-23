@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.portalWindow {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.inputColumns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.textF {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.textF label {
+  margin-bottom: 0.5rem;
+}
+
+.textF input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputCon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.loginBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loginBtn:hover {
+  background-color: #0056b3;
+}
+
+.enterUID,
+.addMore {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.enterUID.hidden,
+.addMore.hidden {
+  display: none; /* Hide elements initially */
+}
+
+.show {
+  display: flex;
+}
+
+.enterUID h2,
+.addMore .txt {
+  text-align: center;
+}
+
+.txt {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#confirmBtn,
+.addMore button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 8px 0; /* Add spacing between buttons */
+}
+
+#confirmBtn:hover,
+.addMore button:hover {
+  background-color: #0056b3;
+}
+
+.flx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flx button {
+  width: 10rem;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+/* Center buttons in addMore div */
+.addMore {
+  text-align: center;
+}
+
+.addMore button {
+  margin: 8px auto; /* Center each button horizontally */
+}
+
+/* Media Queries for different screen sizes */
+@media (min-width: 600px) {
+  .portalWindow {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .portalWindow {
+    width: 70%;
+  }
+  .inputColumns {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .portalWindow {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portalWindow {
+    width: 50%;
+  }
+}

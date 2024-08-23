@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.adminMenu {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid rgb(53, 53, 53);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.btnCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.adminBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(123, 123, 123);
+  color: black;
+  padding: 10px;
+  width: 70px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.adminBtn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.enterUID {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none;
+}
+
+.ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ctn input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ctn .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ctn button {
+  padding: 10px;
+  width: 45%;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.ctn button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for different screen sizes */
+@media (min-width: 400px) {
+  .adminMenu {
+    width: 40%;
+  }
+}
+
+@media (min-width: 600px) {
+  .adminMenu {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .adminMenu {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .adminMenu {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adminMenu {
+    width: 100%;
+  }
+}

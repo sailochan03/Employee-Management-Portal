@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+}
+
+.loginInput {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.inputCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.inputCon input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputCon button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.inputCon button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for different screen sizes */
+@media (min-width: 600px) {
+  .loginInput {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .loginInput {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .loginInput {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .loginInput {
+    width: 30%;
+  }
+}

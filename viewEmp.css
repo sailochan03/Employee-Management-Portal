@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.portalWindow {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fafafa;
+  transition: background-color 0.3s;
+}
+
+.detail:hover {
+  background-color: #f1f1f1;
+}
+
+.detail label {
+  font-weight: bold;
+  color: #555555;
+}
+
+.detail span {
+  flex: 1;
+  text-align: right;
+  color: #333333;
+  padding-left: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .portalWindow {
+    padding: 15px;
+  }
+
+  .label {
+    font-size: 1.2rem;
+  }
+
+  .detail {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .detail span {
+    text-align: left;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  .portalWindow {
+    padding: 10px;
+  }
+
+  .detail {
+    padding: 8px;
+  }
+}
